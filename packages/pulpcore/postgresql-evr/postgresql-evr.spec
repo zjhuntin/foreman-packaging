@@ -50,5 +50,9 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Mon Mar 09 2020 Zach Huntington-Meath <zhunting@redhat.com> - 0.0.1-2
+- Bump postgresql-evr to build for el8
+
 * Mon Mar 02 2020 Ian Ballou <ianballou67@gmail.com> - 0.0.1-1
 - postgresql-evr initial creation
+
