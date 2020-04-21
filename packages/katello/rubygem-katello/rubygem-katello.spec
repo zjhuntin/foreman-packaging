@@ -5,7 +5,7 @@
 %global foreman_min_version 1.24.0
 %global plugin_name katello
 %global gem_name katello
-%global mainver 3.15.0.1.0
+%global mainver 3.15.0.1
 %global release 1
 
 Name:    %{?scl_prefix}rubygem-%{gem_name}
@@ -227,6 +227,9 @@ cp -pa .%{gem_dir}/* \
 %{gem_instdir}/webpack
 
 %changelog
+* Tue Apr 21 2020 b'Zach Huntington-Meath <zhunting@redhat.com>' - b'3.15.0.1-1'
+- Release rubygem-katello 3.15.0.1
+
 * Tue Apr 21 2020 b'Zach Huntington-Meath <zhunting@redhat.com>' - b'3.15.0.1.0-1'
 - Release rubygem-katello 3.15.0.1.0
 
