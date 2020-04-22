@@ -5,8 +5,8 @@
 %global gem_name mimemagic
 
 Name: %{?scl_prefix}rubygem-%{gem_name}
-Version: 0.3.2
-Release: 4%{?dist}
+Version: 0.3.3
+Release: 1%{?dist}
 Summary: Fast mime detection by extension or content
 Group: Development/Languages
 License: MIT
@@ -88,6 +88,9 @@ cp -a .%{gem_dir}/* \
 %{gem_instdir}/test
 
 %changelog
+* Mon Apr 13 2020 Zach Huntington-Meath <zhunting@redhat.com> - 0.3.3-1
+- Release rubygem-mimemagic 0.3.3
+
 * Mon Mar 02 2020 Zach Huntington-Meath <zhunting@redhat.com> - 0.3.2-4
 - Update all rails packages for el8
 
