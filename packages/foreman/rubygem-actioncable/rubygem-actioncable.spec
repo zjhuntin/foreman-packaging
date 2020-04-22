@@ -5,8 +5,8 @@
 %global gem_name actioncable
 
 Name: %{?scl_prefix}rubygem-%{gem_name}
-Version: 5.2.1
-Release: 4%{?dist}
+Version: 6.0.2.1
+Release: 1%{?dist}
 Summary: WebSocket framework for Rails
 Group: Development/Languages
 License: MIT
@@ -85,11 +85,15 @@ cp -a .%{gem_dir}/* \
 %doc %{gem_instdir}/README.md
 
 %changelog
+* Mon Apr 13 2020 Zach Huntington-Meath <zhunting@redhat.com> - 6.0.2.1-1
+- Release rubygem-actioncable 6.0.2.1
+
 * Mon Mar 02 2020 Zach Huntington-Meath <zhunting@redhat.com> - 5.2.1-4
 - Update all rails packages for el8
 
 * Mon Jan 27 2020 Zach Huntington-Meath <zhunting@redhat.com> - 5.2.1-3
 - Update spec to include Obsoletes of rails-packaging version
+
 
 * Thu Dec 19 2019 Zach Huntington-Meath <zhunting@redhat.com> 5.2.1-2
 - Bump for moving over to foreman-packaging
