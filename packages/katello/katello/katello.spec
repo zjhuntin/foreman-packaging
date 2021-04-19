@@ -3,8 +3,8 @@
 
 %global homedir %{_datarootdir}/%{name}
 %global confdir common
-%global prereleasesource master
-%global prerelease %{?prereleasesource:.}%{?prereleasesource}
+#%global prereleasesource master
+#%global prerelease %{?prereleasesource:.}%{?prereleasesource}
 %global release 1
 
 Name:       katello
@@ -180,6 +180,40 @@ Provides a federation of katello services
 # the files section is empty, but without it no RPM will be generated
 
 %changelog
+* Mon Apr 19 2021 Zach Huntington-Meath <zhunting@redhat.com> - 4.0.0-1
+- Release katello 4.0.0
+
+* Mon Feb 22 2021 Zach Huntington-Meath <zhunting@redhat.com> - 4.0.0-0.9.rc2
+- Release katello 4.0.0-rc2
+
+* Thu Feb 11 2021 Eric D. Helms <ericdhelms@gmail.com> - 4.0.0-0.9.rc1
+- Drop container-selinux workaround, fixed in pulpcore-selinux
+
+* Tue Feb 09 2021 Evgeni Golov - 4.0.0-0.8.rc1
+- Release katello 4.0.0
+
+* Thu Feb 04 2021 Eric D. Helms <ericdhelms@gmail.com> - 4.0.0-0.8.master
+- Drop all Pulp 2 and MongoDB requires
+
+* Tue Feb 02 2021 Eric D. Helms <ericdhelms@gmail.com> - 4.0.0-0.7.master
+- Require qpid and dispatch-router on EL8 and EL7
+
+* Tue Feb 02 2021 Eric D. Helms <ericdhelms@gmail.com> - 4.0.0-0.6.master
+- Delete truststore with katello-change-hostname
+
+* Mon Feb 01 2021 Eric D. Helms <ericdhelms@gmail.com> - 4.0.0-0.5.master
+- Require container-selinux on EL8 until https://github.com/pulp/pulpcore-selinux/pull/33 is released
+
+* Mon Feb 01 2021 Ewoud Kohl van Wijngaarden <ewoud@kohlvanwijngaarden.nl> - 4.0.0-0.4.master
+- Drop katello-{backup,restore} stubs
+
+* Fri Jan 29 2021 Eric D. Helms <ericdhelms@gmail.com> - 4.0.0-0.3.master
+- Only install pulp-selinux on Katello server
+
+* Mon Jan 11 2021 Jonathon Turel <jturel@gmail.com> - 4.0.0-0.2.master
+- Fixes #31598 - Don't recreate AAAA record as A
+
+>>>>>>> b9faa2ed7 (Update katello to 4.0.0)
 * Wed Nov 04 2020 Jonathon Turel <jturel@gmail.com> - 4.0.0-0.1.master
 - Bump version to 4.0.0
 
