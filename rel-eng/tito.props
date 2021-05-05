@@ -9,13 +9,13 @@ tito=0.6.1
 builder = obal.tito_extensions.git_annex_spec_builder.GitAnnexSpecBuilder
 tagger = tito.tagger.ReleaseTagger
 lib_dir = rel-eng/custom/
-tag_suffix = .fm2_4
+tag_suffix = .fm2_5
 
 [builder]
 fetch_strategy = custom.ForemanSourceStrategy
 
 # Only whitelist packages that must be non-SCL, e.g. proxy, or CLI related
-[foreman-2.4-nonscl-rhel7]
+[foreman-2.5-nonscl-rhel7]
 disttag = .el7
 whitelist = foreman-bootloaders-redhat
   foreman-release
@@ -31,7 +31,7 @@ whitelist = foreman-bootloaders-redhat
   rubygem-foreman_maintain
   rubygem-highline
 
-[foreman-2.4-rhel7]
+[foreman-2.5-rhel7]
 disttag = .el7
 whitelist = foreman
   foreman-installer
@@ -324,7 +324,7 @@ whitelist = foreman
   tfm
 scl = tfm
 
-[foreman-2.4-el8]
+[foreman-2.5-el8]
 disttag = .el8
 whitelist = foreman
   foreman-bootloaders-redhat
@@ -627,7 +627,7 @@ whitelist = foreman
   rubygem-xmlrpc
   rubygem-zeitwerk
 
-[foreman-plugins-2.4-el8]
+[foreman-plugins-2.5-el8]
 disttag = .el8
 whitelist = ansiblerole-foreman_scap_client
   ansiblerole-insights-client
@@ -791,7 +791,7 @@ whitelist = ansiblerole-foreman_scap_client
   rubygem-wicked
   rubygem-zscheduler
 
-[foreman-plugins-2.4-rhel7]
+[foreman-plugins-2.5-rhel7]
 disttag = .el7
 scl = tfm
 whitelist = foreman-discovery-image-service
@@ -953,16 +953,16 @@ whitelist = foreman-discovery-image-service
   rubygem-wicked
   rubygem-zscheduler
 
-[foreman-plugins-2.4-nonscl-rhel7]
+[foreman-plugins-2.5-nonscl-rhel7]
 disttag = .el7
 whitelist = ansiblerole-foreman_scap_client
   ansiblerole-insights-client
   ansiblerole-satellite-receptor-installer
   puppet-foreman_scap_client
 
-[foreman-client-2.4-el8]
+[foreman-client-2.5-el8]
 disttag = .el8
-# don't whitelist foreman-release here, it's already in foreman-2.4-el8
+# don't whitelist foreman-release here, it's already in foreman-2.5-el8
 whitelist =
   ansible-collection-theforeman-foreman
   gofer
@@ -973,9 +973,9 @@ whitelist =
   rubygem-foreman_scap_client
   tracer
 
-[foreman-client-2.4-rhel7]
+[foreman-client-2.5-rhel7]
 disttag = .el7
-# don't whitelist foreman-release here, it's already in foreman-2.4-nonscl-rhel7
+# don't whitelist foreman-release here, it's already in foreman-2.5-nonscl-rhel7
 whitelist =
   ansible-collection-theforeman-foreman
   katello-host-tools
@@ -985,13 +985,13 @@ whitelist =
   rubygem-foreman_scap_client
   tracer
 
-[foreman-client-2.4-rhel6]
+[foreman-client-2.5-rhel6]
 disttag = .el6
 whitelist = foreman-release
   katello-host-tools
   rubygem-foreman_scap_client
 
-[katello-4.0-rhel7]
+[katello-4.1-rhel7]
 disttag = .el7
 scl = tfm
 whitelist = katello
@@ -1037,7 +1037,7 @@ whitelist = katello
   rubygem-typhoeus
   rubygem-zest
 
-[katello-4.0-el8]
+[katello-4.1-el8]
 disttag = .el8
 whitelist = jsoncpp
   katello

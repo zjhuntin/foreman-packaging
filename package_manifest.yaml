@@ -1,9 +1,9 @@
 ---
 all:
   vars:
-    foremandist: .fm2_4
-    foreman_version: '2.4'
-    katello_version: '4.0'
+    foremandist: .fm2_5
+    foreman_version: '2.5'
+    katello_version: '4.1'
   children:
     packages: {}
     repoclosures: {}
